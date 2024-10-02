@@ -31,13 +31,13 @@ public class ReduceNuber{
         return ans;
     }
     public static int maxi(int n){
-        int maxi = 0;
+        int ans = 0;
         while(n > 0)
         {
             int digit = n % 10;
-            maxi = Math.max(maxi, digit);
+            ans = Math.max(ans, digit);
             n /= 10;
         }
-        return maxi;
+        return ans;
     }
 }
