@@ -12,7 +12,6 @@ public class GCD {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        int ans = 0;
         while(b != 0){
             int temp = b;
             b = a % b;
