@@ -13,7 +13,7 @@
 //For each testcase, print the minimum number of steps.
 
 import java.util.*;
-public class ReduceNuber{
+public class ReduceNumber{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
