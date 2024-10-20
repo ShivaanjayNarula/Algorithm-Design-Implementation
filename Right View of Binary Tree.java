@@ -2,7 +2,7 @@
 This consists of right side view of a Binary Tree, i.e. we have to return the right most node at each level
 */
 
-/**
+/*
  * Definition for a binary tree node.
  * public class TreeNode {
  *     int val;
