@@ -8,34 +8,34 @@ The lowest common ancestor is defined between two nodes p and q as the lowest no
 
 /**
  * Definition for a binary tree node.
- * struct TreeNode {
+ * public class TreeNode {
  *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
  */
+
 class Solution {
-public:
-    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        if(root == nullptr)
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if(root == null)
         {
-            return nullptr;
+            return null;
         }
         if(root == p || root == q)
         {
             return root;
         }
-        TreeNode *left = lowestCommonAncestor(root->left, p, q);
-        TreeNode *right = lowestCommonAncestor(root->right, p, q);
-        if(left != nullptr && right != nullptr)
+        TreeNode left = lowestCommonAncestor(root.left, p, q);
+        TreeNode right = lowestCommonAncestor(root.right, p, q);
+        if(left != null && right != null)
         {
             return root;
         }
-        if(left != nullptr)
+        if(left != null)
         {
             return left;
         }
         return right;
     }
-};
+}
